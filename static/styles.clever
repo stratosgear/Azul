@@ -1,0 +1,12 @@
+bg_col	     		= #030405
+body_text_col		= #FAFAFA
+header_col	 		= #CACACA
+header_text_col 	= #6A6A6A
+header_hilight_col	= #1A1A1A
+
+body:
+	background->
+		color: $bg_col
+
+	color: $body_text_col
+
