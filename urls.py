@@ -1,4 +1,4 @@
-from Azul.pictures.views import pictures_home
+from Azul.pictures.views import *
 from Azul.views import home
 from django.conf import settings
 from django.conf.urls.defaults import *
@@ -21,5 +21,9 @@ urlpatterns = patterns('',
     (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
     ('^$', home),
+
+
     ('^pictures/$', pictures_home),
+    ('^pictures/debug/truncate/$', pictures_truncate),
+    ('^pictures/debug/scan/$', pictures_scan),
 )
