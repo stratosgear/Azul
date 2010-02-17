@@ -1,0 +1,24 @@
+REQUIREMENTS
+=============
+
+* Python 2.6
+* Django 1.1
+* pyexiv
+  Install with sudo aptitude install python2.6-pyexiv2
+
+
+  PIL
+  from PIL import Image
+  image = Image.open('/path/to/image')
+
+  pyexiv2
+  import pyexiv2
+  image = pyexiv2.Image('/path/to/imahe')
+  image.iptcKeys()
+
+
+  sha224
+
+  from hashlib import sha224
+
+  sha224('string').hexdigest()
